@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: none;
+}
+
+.wrapper {
+    max-width: 1134px;
+    margin: 0 auto;
+}
+
+
+
+/* header start here */
+
+header {
+    background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1134px;
+    top: 36px;
+    top: 0;
+    padding: 36px 0;
+}
+
+nav .logo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* search box */
+
+
+
+.search{
+    width:450px;
+    height:60px;
+    border-radius: 10px;
+    background:white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 90px;
+    padding-left: 4px;
+}
+.search input{
+    background: none;
+    border: none;
+    padding: 10px;
+}
+::placeholder{
+    font-size: 20px;
+}
+.search i{
+    border-left: 1px solid black;
+    padding:15px;
+
+}
+
+.main{
+    width: auto;
+    height:auto;
+    margin:6% auto;
+}
+.banner{
+    width: 100%;
+    margin: 0px;
+}
+
+
+/* button */
+
+.btn {
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn.dark {
+    background: #023047;
+}
+
+.btn.light {
+    background: #da722c;
+}
+
+.hero-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -140px;
+}
+
+.hero-section .left {
+    flex: 1;
+}
+
+.hero-section .left h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 125%;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.hero-section .left p {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    color: #ffffff;
+    margin-bottom: 30px;
+    width: 457px;
+}
+
+.hero-section .right {
+    align-self: flex-end;
+}
+
+.hero-section .right img {
+    height: 380px;
+    vertical-align: middle;
+    left: 150px;
+    position: relative;
+    margin-bottom: -7px;
+}
+
+/* Achievement Cards */
+
+.achievement-card {
+    position: absolute;
+}
+
+.achievement-card .content {
+    border-radius: 24px;
+    background-color: white;
+    padding: 8px 32px;
+    z-index: 10;
+    position: relative;
+}
+
+.achievement-card.houses-sold {
+    left: 47%;
+    top: 260px;
+}
+
+.achievement-card.overall-ratings {
+    left: 43%;
+    top: 420px;
+}
+
+.achievement-card .content div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.achievement-card h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: #023047;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.achievement-card p {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #023047;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+
+.achievement-card .bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+    border-radius: 24px;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+}
+
+
+/* shop section  */
+
+h2 {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 120%;
+    margin: 0;
+    color: #023047;
+}
+
+h2.light {
+    color: #023047;
+}
+
+.shop{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 20px 70px 20px;
+}
+
+.shop h2 {
+    text-align: center;
+}
+
+.shop .houses {
+    display: flex;
+    gap: 70px;
+}
+
+.shop .houses img {
+    width: 100%;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+    border-radius: 24px;
+}
+
+
+.shop .for-sell {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 0px 68px;
+    margin: 40px 0;
+    position: relative;
+}
+
+
+.shop .for-sell h3 {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 150%;
+    color: #023047;
+}
+
+.shop .for-sell .info {
+    display: flex;
+    gap: 26px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop .for-sell #houses {
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    white-space: nowrap;
+    color: #023047;
+    position: relative;
+    padding-left: 20px;
+}
+
+.shop .wrapper {
+    position: relative;
+}
+
+.shop .wrapper .btn {
+    position: absolute;
+    right: 0;
+}
+
+
+/* footer here */
+
+footer {
+    background: #070917;
+    color: white;
+    margin-top: 40px;
+    padding: 40px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer h3 {
+    color: #da722c;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+footer ul li {
+    margin: 16px 0;
+}
+
+footer ul .email {
+    margin: 20px;
+}
+
+footer .links-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+
+footer .social {
+    margin-left: 20px;
+}
+
+footer .social a {
+    margin-right: 28px;
+}
+
+footer form {
+    margin-left: 20px;
+    margin-top: 16px;
+    position: relative;
+}
+
+
+footer form input {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    border-radius: 8px;
+    padding: 8px 12px;
+    border: none;
+    width: 100%;
+    color: black;
+}
+
+
+footer form .submit-btn {
+    position: absolute;
+    right: 100px;
+    top: 54%;
+    background: #023047;
+    border-radius: 8px;
+    padding: 8px 32px;
+    border: none;
+    font-family:  sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Upload Page */
+
+div.wrapper form {
+    text-align: center;
+    padding: 100px;
+    max-width: 534px;
+    margin: 0 auto;
+}
+
+div.sell p {
+    font-size: 13px;
+} 
+
+div.upload {
+    padding: 10px;
+}
+
+div.upload {
+    margin-bottom: 30px;
+}
+
+div.wrapper .sell {
+    border: 1px solid #e3e3e3;
+    border-radius: 12px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 5px;
+}
+
+div.wrapper .selling {
+    padding: 05px;
+}
+
+div .selling.text {
+    align-items: right;
+}
+
+/* Selling Page */
+
+.page-background {
+    background: #26308c;
+}
+
+.Selling-Form {
+    width: 85%;
+    max-width: 600px;
+    background: #eee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.Form {
+    border: 1px solid #a9a9a9;
+    margin: 7px 0px;
+    padding: 6px 20px;
+    border-radius: 8px;
+}
+
+.Selling-Form h1 {
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+.Form label {
+    font-size: 13px;
+    font-family: "Raleway",sans-serif;
+    color: #000;
+    display: block;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.Form input,
+.Form textarea {
+    width: 100%;
+    font-size: 12px;
+    margin-top: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 8px;
+}
+
+.button {
+    width: 80%;
+    display: inline-block;
+    background-color: #95c44f;
+    padding: 14px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 8px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/* Contact Page */
+
+.contact-form {
+    width: 85%;
+    max-width: 600px;
+    background: #eee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.Contact-Form h1 {
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+/* Buy Page */
+
+.property-type {
+    padding: 10px;
+    font-size: 24px;
+    font-family: "Raleway",sans-serif;
+    font-weight: bold;
+}
+
+/* Our Services Page*/
+
+header.header-12 {
+    height: 100px;
+}
+
+.home-img {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.Property_image {
+    width: 250px;
+    height: 250px;
+}
+
+.home_1 {
+    border: 2px solid grey;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    background: white;
+}
+
+.Available-House {
+    margin-top: 50px;
+}
+
+.home_1 .section_1 {
+    display: flex;
+}
+
+.house_img {
+    border-radius: 10px;
+    text-align: left;
+    padding-right: 30px;
+}
+
+.buy_now {
+    text-align: right;
+}
+
+.home_1 .section_1 .home_text {
+    display: grid;
+    grid-template-rows: 2;
+}
+
+.home_1 .home_text h1 {
+    color: #da722c;
+    font-size: 40px;
+}
+
+.home_1 .home_text p {
+    font-size: 20px;
+    width: 300px;
+    border: 2px dashed grey;
+    background: rgb(243, 237, 237);
+    padding: 20px;
+}
+
+/* About Us page */
+
+.logo.about {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-size: 60px;
+        margin-top: 30px;
+        margin-left: 80px;
+}
+
+.logo.about a {
+    color: #000;
+}
+
+
+.content-section {
+    border: 10px solid black;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.sub-section {
+    border: 5px dashed black;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.about-bg {
+    background-color: #ddd;
+}
+
+.section{
+	width: 100%;
+	min-height: 100vh;
+    margin-top: -80px;
+    padding-bottom: 80px;
+}
+
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.image-section{
+	float: right;
+	width: 40%;
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+}
+.content-section .title{
+	text-transform: uppercase;
+	font-size: 28px;
+}
+.content-section .content h3{
+	margin-top: 20px;
+	color:#5d5d5d;
+	font-size: 21px;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+	background-color: #a52a2a;
+	color:#fff;
+}
+.content-section .social{
+	margin: 40px 40px;
+}
+.content-section .social i{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-section .social i:hover{
+	color:#3d3d3d;
+}
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+	
+}
+.image-section img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin:auto;
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+.content-section .social{
+	text-align: center;
+}
+
+}
